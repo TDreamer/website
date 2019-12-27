@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  font-size: 30px;
+  display: inline-block;
+}
+ul > li{
+  padding: 20px;
+  color: white;
+  background-color: skyblue;
+  margin: 10px;
+}
+li:hover{
+  background-color: blue;
+}
+
+#main > div{
+  padding: 20px;
+  position: absolute;
+  display: inline-block;
+}
+
+
+#top{
+  background-color: gray;
+  color: white;
+  font-size: 80px;
+  padding: 10px;
+}
+#top > p{
+  text-align: left;
+}
+#bottom{
+  background-color: gray;
+  padding: 30px
+}
+#bottom > p{
+  color: white;
+  text-align: left;
+}
