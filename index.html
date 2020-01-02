@@ -2,47 +2,349 @@
 <html>
 
 	<head>
-
 		<title>using name</title>
-
 		<meta charset="utf-8" name="robots" content="index, follow">
 		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 		<meta name="developer" content="seokjun">
 		<link rel="stylesheet" href="index.css">
+		<script src="jquery-3.4.1.js"></script>
+		<script src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
 		<meta http-equiv="fresh" content="30">
-
 	</head>
 
 
 	<body>
 
-		<div id="top">
-			<p>China</p>
+
+
+	<div class="header">
+
+		<div class="headerf">
+			<div class="logo">
+				<a href="index.html" id="logo">Progres</a>
+			</div>
+			<a href="" id="default">Default</a>
+			<a href="" id="webback">WebBack</a>
+			<a href="" id="webfront">WebFront</a>
+			<a href="" id="algorithm">Algorithm</a>
 		</div>
 
-		<div id="main">
+		<div class="header_menu">
 
-			<ul>
-				<a href="#">The flight</a>
-				<a href="#">The city</a>
-				<a href="#">The island</a>
-				<a href="#">The food</a>
-			</ul>
-
-			<div>
-				<h1>China</h1>
-				<p>using nameusing nameusing nameusing nameusing nameusing name
-				using nameusing nameusing nameusing nameusing nameusing name
-				using nameusing nameusing nameusing name
-				using nameusing nameusing nameusing nameusing nameusing </p>
+			<div class="menuff_default">
+				<ul class="menuf_default">
+					<li>
+						<a href="#">C</a>
+						<ul>
+							<li id="child_menu"><a href="C.html" id="child_menu_button">C내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">C++</a>
+						<ul>
+							<li id="child_menu"><a href="CPP.html" id="child_menu_button">C++내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C++내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C++내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C++내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Java</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용5</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용6</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용7</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용8</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Python</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Js</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용4</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 
 
+			<div class="menuff_server">
+				<ul class="menuf_server">
+					<li>
+						<a href="#">Mysql</a>
+						<ul>
+							<li id="child_menu"><a href="MYSQL.html" id="child_menu_button">Mysql내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Mysql내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Mysql내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Mysql내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Node.js</a>
+						<ul>
+							<li id="child_menu"><a href="NODEJS.html" id="child_menu_button">Node.js내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Node.js내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Node.js내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Node.js내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Php</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="menuff_front">
+				<ul class="menuf_front">
+					<li>
+						<a href="#">Html</a>
+						<ul>
+							<li id="child_menu"><a href="HTML.html" id="child_menu_button">Html내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Html내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Html내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Html내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Css</a>
+						<ul>
+							<li id="child_menu"><a href="CSS.html" id="child_menu_button">Css내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Css내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Css내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Css내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Jquery</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="menuff_algo">
+				<ul class="menuf_algo">
+					<li>
+						<a href="#">자주 쓰이는 기법</a>
+					</li>
+					<li>
+						<a href="#">Dynamic Programming</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Top-Down</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Bottom-Up</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">C++ STL 활용</a>
+					</li>
+					<li>
+						<a href="#">비트마스크</a>
+					</li>
+					<li>
+						<a href="#">고급 기법</a>
+					</li>
+					<li>
+						<a href="#">자료구조</a>
+						<ul>
+							<li id="child_menu"><a href="TREE.html" id="child_menu_button">트리</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">그래프</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">해시 테이블</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">사용자 정의 자료구조</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
 	</div>
 
-		<div id="bottom">
-			<p>footer text</p>
+
+
+
+
+
+
+	<div class="ex">
+		<p id="titles">사이트 이름 site name</p>
+		<p id="ftitles">다양한 프로그래밍, 웹 언어들을 공부하고 </p>
+	</div>
+
+
+
+
+
+
+
+		<div class="slide">
+			<ul>
+				<li> <img src="images/site_ex.jpg" alt=""> </li>
+				<li> <img src="images/site_ex.jpg" alt=""> </li>
+				<li> <img src="images/site_ex.jpg" alt=""> </li>
+				<li> <img src="images/site_ex.jpg" alt=""> </li>
+			</ul>
 		</div>
+
+
+
+
+
+
+		<div class="refex">
+				<p>프로그래밍 언어의 다양한 레퍼런스들을 만나보세요</p>
+		</div>
+
+		<div class="ref">
+			<a href="https://ko.cppreference.com/w/c" target="_blank">
+				<img src="images/cref.png" alt="cref" id="ref">
+			</a>
+			<a href="https://en.cppreference.com/w/" target="_blank">
+				<img src="images/cppref.png" alt="cppref" id="ref">
+			</a>
+			<a href="https://www.oracle.com/technetwork/java/index-jsp-142903.html" target="_blank">
+				<img src="images/javaref.png" alt="javaref" id="ref">
+			</a>
+			<a href="https://docs.python.org/3/reference/" target="_blank">
+				<img src="images/pyref.png" alt="pyref" id="ref">
+			</a>
+			<a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference" target="_blank">
+				<img src="images/jsref.png" alt="javaref" id="ref">
+			</a>
+			<a href="https://dev.mysql.com/doc/refman/8.0/en/" target="_blank">
+				<img src="images/mysqlref.png" alt="mysqlref" id="ref">
+			</a>
+			<a href="https://www.php.net/manual/en/langref.php" target="_blank">
+				<img src="images/phpref.png" alt="phpref" id="ref">
+			</a>
+		</div>
+
+
+
+
+
+
+
+	<div class="AlgorithmEx">
+		<img src="images/site_ex.jpg" alt="site_ex" width="100%" height="100%">
+		<div class="exdiv">
+			<p id="ex">다양한 알고리즘 사이트에서 문제를 풀어보세요</p>
+			<p id="ex2">다양한 문제들을 풀며 실력을 기르세요</p>
+		</div>
+		<div class="Algorithm_site">
+					<div class="site">
+						<a href="https://www.acmicpc.net/" target="_blank">
+							<img src="images/baekjoon.png" alt="Baekjoon_online_judge" width="300" height="160">
+							<p>Baekjoon Online Judge</p>
+						</a>
+					</div>
+					<div class="site">
+						<a href="https://www.codeup.kr/" target="_blank">
+							<img src="images/codeup.png" alt="Codeup" width="300" height="160">
+							<p>Codeup</p>
+						</a>
+					</div>
+					<div class="site">
+						<a href="https://codeforces.com/" target="_blank">
+							<img src="images/codeforces.png" alt="CodeForces" width="300" height="160">
+							<p>CodeForces</p>
+						</a>
+					</div>
+					<div class="site">
+						<a href="https://oj.uz/" target="_blank">
+							<img src="images/ojuz.png" alt="oj.uz" width="300" height="160">
+							<p>oj.uz</p>
+						</a>
+					</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="footer">
+			<div class="logo">
+				<a href="index.html" id="logo">Progres</a>
+			</div>
+			<div class="footerm">
+				<ul>
+					<li id="ff">Default</li>
+					<li><a href="#">C</a></li>
+					<li><a href="#">C++</a></li>
+					<li><a href="#">Java</a></li>
+					<li><a href="#">Python</a></li>
+					<li><a href="#">Javascript</a></li>
+				</ul>
+				<ul>
+					<li id="ff">WebBack</li>
+					<li><a href="#">Mysql</a></li>
+					<li><a href="#">Node.js</a></li>
+					<li><a href="#">Php</a></li>
+				</ul>
+				<ul>
+					<li id="ff">WebFront</li>
+					<li><a href="#">Html</a></li>
+					<li><a href="#">Css</a></li>
+					<li><a href="#">Jquery</a></li>
+				</ul>
+				<ul>
+					<li id="ff">Algorithm</li>
+					<li><a href="#">자주 쓰이는 기법</a></li>
+					<li><a href="#">Dynamic Programming</a></li>
+					<li><a href="#">C++ STL 활용</a></li>
+					<li><a href="#">비트마스크</a></li>
+					<li><a href="#">고급 기법</a></li>
+					<li><a href="#">자료구조</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+		<div class="info">
+			<p>평촌경영고</p>
+			<p>html project</p>
+			<p>2020-01-02</p>
+		</div>
+
+
+
 
 	</body>
 

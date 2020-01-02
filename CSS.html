@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="jquery-3.4.1.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <meta http-equiv="fresh" content="30">
+  <title>Css</title>
+
+  <style>
+    body{
+      font-family: Century Gothic, sans-serif;
+      margin: 0px;
+    }
+    section{
+      display: flex;
+      margin: 0px 50px 0px 50px;
+    }
+    #select{
+      background: #55739a;
+      padding: 30px;
+      margin: 0px;
+      text-align: center;
+      color: white;
+    }
+    header {
+      display: block;
+    }
+    .head_name{
+      padding: 20px 0px 0px 0px;
+    }
+    nav{
+      display: block;
+    }
+
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: "함초롬돋움";
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    a:hover{
+      color: gray;
+    }
+    li{
+      list-style: none;
+    }
+    .header{
+      background-color: #201D1D;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      float: inherit;
+      font-size: 20px;
+    }
+    .headerf{
+      background-color: #201D1D;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 0px 3px;
+      padding: 10px 0px;
+    }
+    .headerf > img{
+      margin-left: 20px;
+    }
+    .headerf > a{
+      padding: 10px 10px;
+      margin: 0px 80px;
+      color: darkgray;
+    }
+
+
+    .header_menu{
+      width: 100%;
+      height: auto;
+    }
+    .menuff_default, .menuff_server,
+    .menuff_front, .menuff_algo{
+      width: 100%;
+      background-color: #BDBABA;
+      justify-content: center;
+      box-shadow: 2px 0px 3px;
+      height: 350px;
+      display: none;
+    }
+    .menuf_default, .menuf_server,
+    .menuf_front, .menuf_algo{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: center;
+    }
+    .menuf_default > li, .menuf_server > li,
+    .menuf_front > li, .menuf_algo > li{
+      margin-top: 30px;
+
+    }
+
+    .header_menu > div > ul > li > ul > li{
+      font-size: 20px;
+      margin: 20px 90px;
+      font-family: "돋움";
+    }
+
+    .header_menu > div > ul > li > a{
+      font-size: 30px;
+      font-family: "휴먼매직체";
+      margin: 10px 90px;
+    }
+
+    .list{
+      display: inline-block;
+      width: 20%;
+      height: 100%;
+      padding-left: 10px;
+      margin: 10px;
+      float: left;
+    }
+    .inlist{
+      position: fixed;
+      width: 20%;
+      height: 100%;
+      padding: 0px;
+      margin-left: -20px;
+    }
+    .content{
+      display: inline-block;
+      margin: auto;
+      width: 60%;
+    }
+    .short{
+      display: inline-block;
+      width: 20%;
+      float: right;
+      padding: 10px;
+    }
+    .inshort{
+      position: fixed;
+      width: 20%;
+      height: 100%;
+      padding: 0px;
+    }
+    section ul{
+      padding: 10px;
+      margin: 10px;
+    }
+    section ul li{
+      background: #f0f0f0;
+      list-style: none;
+      padding: 10px;
+    }
+    a{
+      display: block;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover{
+      color: #23DF65;
+    }
+    section ul li:hover{
+      background: white;
+    }
+    p{
+      line-height: 150%;
+      text-align: justify;
+    }
+    #information{
+      margin: 42px;
+    }
+    span#title{
+      font-size: 38px;
+    }
+    span#subheading{
+      font-size: 16px;
+    }
+    #go_home{
+      width: 230px;
+      height: 60px;
+      margin: 0px 0px 0px 20px;
+    }
+    .headerf > .logo{
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  background-color: darkgray;
+  margin-right: 20px;
+}
+.headerf > .logo > #logo{
+  color: black;
+  font-size: 40px;
+  font-family: "Adobe Fangsong Std R";
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+
+		<div class="headerf">
+      <div class="logo">
+				<a href="index.html" id="logo">Progres</a>
+			</div>
+			<a href="#" id="default">Default</a>
+			<a href="#" id="webback">WebBack</a>
+			<a href="#" id="webfront">WebFront</a>
+			<a href="#" id="algorithm">Algorithm</a>
+		</div>
+
+    <div class="header_menu">
+
+      <div class="menuff_default">
+        <ul class="menuf_default">
+          <li>
+            <a href="#">C</a>
+            <ul>
+              <li id="child_menu"><a href="C.html" id="child_menu_button">C내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">C내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">C내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">C내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">C++</a>
+            <ul>
+              <li id="child_menu"><a href="CPP.html" id="child_menu_button">C++내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">C++내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">C++내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">C++내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Java</a>
+            <ul>
+              <li id="child_menu"><a href="#" id="child_menu_button">Java내용5</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Java내용6</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Java내용7</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Java내용8</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Python</a>
+            <ul>
+              <li id="child_menu"><a href="#" id="child_menu_button">Python내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Python내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Python내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Python내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Js</a>
+            <ul>
+              <li id="child_menu"><a href="#" id="child_menu_button">Js내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Js내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Js내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Js내용4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="menuff_server">
+        <ul class="menuf_server">
+          <li>
+            <a href="#">Mysql</a>
+            <ul>
+              <li id="child_menu"><a href="MYSQL.html" id="child_menu_button">Mysql내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Mysql내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Mysql내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Mysql내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Node.js</a>
+            <ul>
+              <li id="child_menu"><a href="NODEJS.html" id="child_menu_button">Node.js내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Node.js내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Node.js내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Node.js내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Php</a>
+            <ul>
+              <li id="child_menu"><a href="#" id="child_menu_button">Php내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Php내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Php내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Php내용4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="menuff_front">
+        <ul class="menuf_front">
+          <li>
+            <a href="#">Html</a>
+            <ul>
+              <li id="child_menu"><a href="HTML.html" id="child_menu_button">Html내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Html내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Html내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Html내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Css</a>
+            <ul>
+              <li id="child_menu"><a href="CSS.html" id="child_menu_button">Css내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Css내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Css내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Css내용4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Jquery</a>
+            <ul>
+              <li id="child_menu"><a href="#" id="child_menu_button">Jquery내용1</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Jquery내용2</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Jquery내용3</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Jquery내용4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menuff_algo">
+        <ul class="menuf_algo">
+          <li>
+            <a href="#">자주 쓰이는 기법</a>
+          </li>
+          <li>
+            <a href="#">Dynamic Programming</a>
+            <ul>
+              <li id="child_menu"><a href="#" id="child_menu_button">Top-Down</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">Bottom-Up</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">C++ STL 활용</a>
+          </li>
+          <li>
+            <a href="#">비트마스크</a>
+          </li>
+          <li>
+            <a href="#">고급 기법</a>
+          </li>
+          <li>
+            <a href="#">자료구조</a>
+            <ul>
+              <li id="child_menu"><a href="TREE.html" id="child_menu_button">트리</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">그래프</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">해시 테이블</a></li>
+              <li id="child_menu"><a href="#" id="child_menu_button">사용자 정의 자료구조</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+	</div>
+    <div class="head_name">
+      <h1 id="select"><span id="title">Css |</span><span id="subheading"> Css에 대해 설명합니다.</span></h1>
+      <p id="information">WebFront &nbsp &gt &nbsp Css</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="list">
+      <div class="inlist">
+        <ul>
+          <h3 style="padding-left: 10px">WebFront</h3>
+          <li><a href="Html.html">Html</a></li>
+          <li><a href="Css.html">Css</a></li>
+          <li><a href="Jquery.html">Jquery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <h1 id="selector">css선택자</h1>
+      <hr><br>
+
+      <h2 id="html selector">HTML 요소 선택자</h2>
+      <p>css를 적용할 대상으로 HTML 요소의 이름을 직접 사용하여 선택할 수 있습니다.</p>
+      <img src="img/html selector.PNG" alt="html selector">
+      <hr><br>
+
+      <h2 id="id selector">아이디(id) 선택자</h2>
+      <p>아이디 선택자는 CSS를 적용할 대상으로 특정 요소를 선택할 때 사용합니다. 이 선택자는 웹 페이지에 포함된 여러 요소 중에서 특정 아이디 이름을 가지는 요소만을 선택해 줍니다.</p>
+      <img src="img/id selector.PNG" alt="id selector">
+      <p>HTML과 CSS에서는 하나의 웹 페이지에 속하는 여러 요소에 같은 아이디 이름을 사용해도 별 문제없이 동작합니다. 하지만 이렇게 중복된 아이디를 가지고 자바스크립트 작업을 하게 되면 오류가 발생합니다. 따라서 되도록이면 하나의 웹 페이지에 속하는 요소에는 다른 아이디 이름을 사용하거나 클래스를 사용하는 것이 좋습니다.</p>
+      <hr><br>
+
+      <h2 id="class selector">클래스(class) 선택자</h2>
+      <p>클래스 선택자는 특정 집단의 여러 요소를 한 번에 선택할 때 사용합니다. 이러한 특정 집단을 클래스(class)라고 하며, 같은 클래스 이름을 가지는 요소들을 모두 선택해 줍니다.</p>
+      <img src="img/class selector.PNG" alt="class selector">
+      <hr><br>
+
+      <h2 id="group selector">그룹(group) 선택자</h2>
+      <p>그룹 선택자는 위에서 언급한 여러 선택자를 같이 사용하고자 할 때 사용합니다. 그룹 선택자는 여러 선택자를 쉼표(,)로 구분하여 연결합니다. 이러한 그룹 선택자는 코드를 중복해서 작성하지 않도록 하여 코드를 간결하게 만들어 줍니다.</p>
+      <img src="img/group selector.PNG" alt="group selector">
+    </div>
+    <div class="short">
+      <div class="inshort">
+        <ul>
+          <h3 style="padding-left: 10px">바로가기</h3>
+          <li><a href="#html selector">HMTL 요소 선택자</a></li>
+          <li><a href="#id selector">아이디 선택자</a></li>
+          <li><a href="#class selector">클래스 선택자</a></li>
+          <li><a href="#group selector">그룹 선택자</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+</body>
+</html>

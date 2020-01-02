@@ -1,56 +1,276 @@
 *{
-  margin: 0;
   padding: 0;
-}
-
-#main{
-  display: flex;
-
-}
-ul{
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  font-family: "함초롬돋움";
 }
 a{
-  padding: 20px;
-  color: white;
-  background-color: skyblue;
-  margin: 10px;
   text-decoration: none;
-  flex-shrink: 0;
-  flex: initial;
+  color: black;
 }
 a:hover{
-  background-color: blue;
+  color: gray;
+}
+li{
+  list-style: none;
+}
+.header{
+  background-color: #201D1D;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  float: inherit;
+  font-size: 20px;
+}
+.headerf{
+  background-color: #201D1D;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0px 3px;
+  padding: 10px 0px;
+}
+.headerf > img{
+  margin-left: 20px;
+}
+.headerf > a{
+  padding: 10px 10px;
+  margin: 0px 80px;
+  color: darkgray;
+}
+.headerf > .logo, .footer > .logo{
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  background-color: darkgray;
+  margin-right: 20px;
+}
+.headerf > .logo > #logo, .footer > .logo > #logo{
+  color: black;
+  font-size: 40px;
+  font-family: "Adobe Fangsong Std R";
 }
 
-#main > div{
-  padding: 20px;
-  flex-wrap: wrap;
+.header_menu{
+  width: 100%;
+  height: auto;
+}
+.menuff_default, .menuff_server,
+.menuff_front, .menuff_algo{
+  width: 100%;
+  background-color: #BDBABA;
+  justify-content: center;
+  box-shadow: 2px 0px 3px;
+  height: 350px;
+  display: none;
+}
+.menuf_default, .menuf_server,
+.menuf_front, .menuf_algo{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.menuf_default > li, .menuf_server > li,
+.menuf_front > li, .menuf_algo > li{
+  margin-top: 30px;
+
+}
+
+.header_menu > div > ul > li > ul > li{
+  font-size: 20px;
+  margin: 20px 90px;
+  font-family: "돋움";
+}
+
+.header_menu > div > ul > li > a{
+  font-size: 30px;
+  font-family: "휴먼매직체";
+  margin: 10px 90px;
 }
 
 
-#top{
-  background-color: gray;
+
+
+
+
+
+
+
+
+.slide{
+  z-index: 1;
+  padding-top: 37px;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow:hidden;
+  float: inherit;
+}
+.slide > ul > li > img{
+  width: 100%;
+  height: 600px;
+}
+.slide ul{
+  height:600px
+}
+.slide li{
+  height:600px;
+}
+
+
+
+
+
+
+
+
+.AlgorithmEx{
+  width: 100%;
+  height: 800px;
+  position: relative;
+  padding-top: 100px;
+  margin-top: -4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.exdiv > #ex{
+  font-family: "휴먼둥근헤드라인";
   color: white;
-  font-size: 80px;
-  padding: 10px;
+  font-size: 40px;
 }
-#top > p{
-  text-align: left;
-}
-#bottom{
-  background-color: gray;
-  padding: 30px
-}
-#bottom > p{
+.exdiv > #ex2{
+  padding: 100px 0px;
+  font-family: "휴먼매직체";
   color: white;
-  text-align: left;
+  font-size: 40px;
+}
+.exdiv{
+  width: 100%;
+  position: absolute;
+  top: 200px;
+}
+.Algorithm_site{
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.site{
+  width: 300px;
+  height: 230px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-left: 100px;
+}
+.site > a > p{
+  font-size: 25px;
+}
+.site > a > img{
+  border-bottom: 2px solid darkgray;
+  transition: all 0.5s;
+}
+.site > a > img:hover{
+  height: 100%;
+}
+.site > a:hover{
+  color: black;
+}
+.site:hover{
+  box-shadow: 0px 0px 6px;
 }
 
-@media(max-width:500px){
-  #main{
-    flex-direction: column;
-  }
+
+
+
+
+
+
+
+
+.refex{
+  margin-top: -2px;
+  text-align: center;
+  margin-top: 50px;
+}
+.refex > p{
+  font-family: "휴먼둥근헤드라인";
+  font-size: 50px;
+  padding: 50px;
+}
+.ref{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ref > a{
+  padding-top: 50px;
+  margin: 20px 30px;
+}
+#ref{
+  width: 200px;
+  height: 200px;
+  transition: all 0.5s;
+  padding-bottom: 20px;
+}
+#ref:hover{
+  width: 220px;
+  height: 220px;
+}
+
+
+
+
+
+
+
+
+.footer{
+  padding: 100px 0px;;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 2px 0px 3px;
+}
+.footerm{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerm > ul{
+  padding-left: 120px;
+}
+.footerm > ul > li{
+  padding: 3px 0px;
+}
+.footerm > ul > li > a{
+  font-size: 23px;
+}
+.footerm > ul > #ff{
+  font-family: "휴먼매직체";
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.info{
+  padding: 30px 0px;
+  text-align: center;
+  justify-content: center;
+}
+.info > p{
+  font-size: 20px;
 }
