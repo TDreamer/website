@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="jquery-3.4.1.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <meta http-equiv="fresh" content="30">
+  <title>Node.js</title>
+
+  <style>
+  body{
+    font-family: Century Gothic, sans-serif;
+    margin: 0px;
+  }
+  section{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+  }
+  #select{
+    background: #876396;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+  }
+  header {
+    display: block;
+  }
+  .head_name{
+    padding: 20px 0px 0px 0px;
+  }
+  nav{
+    display: block;
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: "함초롬돋움";
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: gray;
+  }
+  li{
+    list-style: none;
+  }
+  .header{
+    background-color: #201D1D;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    float: inherit;
+    font-size: 20px;
+  }
+  .headerf{
+    background-color: #201D1D;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 0px 3px;
+    padding: 10px 0px;
+  }
+  .headerf > img{
+    margin-left: 20px;
+  }
+  .headerf > a{
+    padding: 10px 10px;
+    margin: 0px 80px;
+    color: darkgray;
+  }
+
+
+  .header_menu{
+    width: 100%;
+    height: auto;
+  }
+  .menuff_default, .menuff_server,
+  .menuff_front, .menuff_algo{
+    width: 100%;
+    background-color: #BDBABA;
+    justify-content: center;
+    box-shadow: 2px 0px 3px;
+    height: 350px;
+    display: none;
+  }
+  .menuf_default, .menuf_server,
+  .menuf_front, .menuf_algo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+  .menuf_default > li, .menuf_server > li,
+  .menuf_front > li, .menuf_algo > li{
+    margin-top: 30px;
+
+  }
+
+  .header_menu > div > ul > li > ul > li{
+    font-size: 20px;
+    margin: 20px 90px;
+    font-family: "돋움";
+  }
+
+  .header_menu > div > ul > li > a{
+    font-size: 30px;
+    font-family: "휴먼매직체";
+    margin: 10px 90px;
+  }
+
+  .list{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    padding-left: 10px;
+    margin: 10px;
+    float: left;
+  }
+  .inlist{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 0px;
+    margin-left: -20px;
+  }
+  .content{
+    display: inline-block;
+    margin: auto;
+    width: 60%;
+  }
+  .short{
+    display: inline-block;
+    width: 20%;
+    float: right;
+    padding: 10px;
+  }
+  .inshort{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    padding: 0px;
+  }
+  section ul{
+    padding: 10px;
+    margin: 10px;
+  }
+  section ul li{
+    background: #f0f0f0;
+    list-style: none;
+    padding: 10px;
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: #23DF65;
+  }
+  section ul li:hover{
+    background: white;
+  }
+  p{
+    line-height: 150%;
+    text-align: justify;
+  }
+  #information{
+    margin: 42px;
+  }
+  span#title{
+    font-size: 38px;
+  }
+  span#subheading{
+    font-size: 16px;
+  }
+  #go_home{
+    width: 230px;
+    height: 60px;
+    margin: 0px 0px 0px 20px;
+  }
+  .headerf > .logo{
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  background-color: darkgray;
+  margin-right: 20px;
+}
+.headerf > .logo > #logo{
+  color: black;
+  font-size: 40px;
+  font-family: "Adobe Fangsong Std R";
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+
+		<div class="headerf">
+      <div class="logo">
+				<a href="index.html" id="logo">Progres</a>
+			</div>
+			<a href="#" id="default">Default</a>
+			<a href="#" id="webback">WebBack</a>
+			<a href="#" id="webfront">WebFront</a>
+			<a href="#" id="algorithm">Algorithm</a>
+		</div>
+
+    <div class="header_menu">
+
+			<div class="menuff_default">
+				<ul class="menuf_default">
+					<li>
+						<a href="#">C</a>
+						<ul>
+							<li id="child_menu"><a href="C.html" id="child_menu_button">C내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">C++</a>
+						<ul>
+							<li id="child_menu"><a href="CPP.html" id="child_menu_button">C++내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C++내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C++내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">C++내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Java</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용5</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용6</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용7</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Java내용8</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Python</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Python내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Js</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Js내용4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="menuff_server">
+				<ul class="menuf_server">
+					<li>
+						<a href="#">Mysql</a>
+						<ul>
+							<li id="child_menu"><a href="MYSQL.html" id="child_menu_button">Mysql내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Mysql내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Mysql내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Mysql내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Node.js</a>
+						<ul>
+							<li id="child_menu"><a href="NODEJS.html" id="child_menu_button">Node.js내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Node.js내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Node.js내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Node.js내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Php</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Php내용4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="menuff_front">
+				<ul class="menuf_front">
+					<li>
+						<a href="#">Html</a>
+						<ul>
+							<li id="child_menu"><a href="HTML.html" id="child_menu_button">Html내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Html내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Html내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Html내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Css</a>
+						<ul>
+							<li id="child_menu"><a href="CSS.html" id="child_menu_button">Css내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Css내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Css내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Css내용4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Jquery</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용1</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용2</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용3</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Jquery내용4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="menuff_algo">
+				<ul class="menuf_algo">
+					<li>
+						<a href="#">자주 쓰이는 기법</a>
+					</li>
+					<li>
+						<a href="#">Dynamic Programming</a>
+						<ul>
+							<li id="child_menu"><a href="#" id="child_menu_button">Top-Down</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">Bottom-Up</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">C++ STL 활용</a>
+					</li>
+					<li>
+						<a href="#">비트마스크</a>
+					</li>
+					<li>
+						<a href="#">고급 기법</a>
+					</li>
+					<li>
+						<a href="#">자료구조</a>
+						<ul>
+							<li id="child_menu"><a href="TREE.html" id="child_menu_button">트리</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">그래프</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">해시 테이블</a></li>
+							<li id="child_menu"><a href="#" id="child_menu_button">사용자 정의 자료구조</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+    <div class="head_name">
+      <h1 id="select"><span id="title">Node.js |</span><span id="subheading"> Node.js에 대해 설명합니다.</span></h1>
+      <p id="information">WebBack &nbsp &gt &nbsp Node.js</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="list">
+      <div class="inlist">
+        <ul>
+          <h3 style="padding-left: 10px">WebBack</h3>
+          <li><a href="Mysql.html">Mysql</a></li>
+          <li><a href="Node_js.html">Node.js</a></li>
+          <li><a href="Php.html">Php</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <h1 id="content1">기본 문법</h1>
+      <hr><br>
+      <h2 id="variable1">변수의 선언 및 사용</h2>
+      <p>변수는 타입에 대한 구분없이 앞에 var 로 선언하고 사용합니다. 변수의 타입은 실행시에 스크립트 해석기인 엔진이 결정하지만 V8엔진의 경우 실행시가 아닌 JIT compiler가 기계어로 컴파일하기 직전에 컴파일러에 의해서 결정됩니다.</p>
+      <img src="img/node_js.PNG" alt="node.js">
+      <hr><br>
+      <h2 id="function">함수의 선언 및 사용</h2>
+      <p>함수는 function 함수이름(파라미터) { 실행코드 } 형태로 선언하며, 함수이름을 괄호와 함께 호출하면 실행됩니다. 실행코드에 return 예약어가 없으면 결과값 리턴이 없이 함수가 실행 후에 그대로 종료됩니다.</p>
+      <img src="img/node_js2.PNG" alt="node_js2">
+      <hr><br>
+      <h2 id="condition">조건문</h2>
+      <p>조건문으로 if 와 switch 가 있는데 이 사이트에서는 if 만 사용하도록 하겠습니다. 조건문의 구조는 타 언어와 유사합니다.</p>
+      <img src="img/node_js3.PNG" alt="node_js3">
+      <p>* console은 node.js 에서 콘솔화면에 로그를 사용하기 위한 내장객체이고, 멤버변수인 log('내용')로 로그를 출력할 수 있습니다.</p>
+      <hr><br>
+      <h2 id="class">클래스</h2>
+      <p>프로토타입기반의 함수형 언어이기 때문에 특별하게 객체지향을 위한 class는 없습니다. 하지만 함수형 언어들의 특징은 함수자체를 하나의 객체로 취급하기 때문에 단일함수 또는 파일 자체를 하나의 class처럼 사용할 수 있습니다.</p>
+    </div>
+    <div class="short">
+      <div class="inshort">
+        <ul>
+          <h3 style="padding-left: 10px">바로가기</h3>
+          <li><a href="#variable1">변수의 선언 및 사용</a></li>
+          <li><a href="#function">함수의 선언 및 사용</a></li>
+          <li><a href="#condition">조건문</li>
+          <li><a href="#class">클래스</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
