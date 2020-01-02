@@ -58,7 +58,6 @@ li{
   font-family: "Adobe Fangsong Std R";
 }
 
-<<<<<<< HEAD
 .header_menu{
   width: 100%;
   height: auto;
@@ -193,7 +192,6 @@ li{
 }
 .site:hover{
   box-shadow: 0px 0px 6px;
-=======
 ul{
   font-size: 30px;
   display: inline-block;
@@ -212,7 +210,6 @@ li:hover{
   padding: 20px;
   position: absolute;
   display: inline-block;
->>>>>>> parent of f2749a5... index
 }
 
 
@@ -296,5 +293,3 @@ li:hover{
 .info > p{
   font-size: 20px;
 }
-=======
->>>>>>> parent of f2749a5... index
